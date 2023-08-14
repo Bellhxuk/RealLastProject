@@ -13,8 +13,14 @@ public class InfoUI : MonoBehaviour
     public string[] explanationString;
     public string[] shortExplanationString;
     public Sprite[] infoSprites;
+    private SceneChanger changer;
 
     // Start is called before the first frame update
+    void Awake()
+    {
+        changer = GetComponent<SceneChanger>();
+    }
+
     void Start()
     {
         OffInfoUI();
@@ -27,6 +33,7 @@ public class InfoUI : MonoBehaviour
         img.sprite = infoSprites[num];
         explanation.text = explanationString[num];
         shortExplanation.text = shortExplanationString[num];
+        changer.objectNum += 1;
     }
 
     public void OffInfoUI()
