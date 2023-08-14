@@ -25,6 +25,6 @@ public class SceneChanger : MonoBehaviour
 
     public void Change() // °è´Ü ¾À ·Îµå
     {
-            SceneManager.LoadScene("Chap1-2Stairs");
+        SceneManager.LoadScene("Chap1-2Stairs");
     }
 }
