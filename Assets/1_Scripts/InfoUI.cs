@@ -8,8 +8,10 @@ public class InfoUI : MonoBehaviour
     public GameObject infoCanvas;
     public LineRenderer uiLaser;
     public Image img;
-    public Text txt;
-    public string[] infoString;
+    public Text explanation;
+    public Text shortExplanation;
+    public string[] explanationString;
+    public string[] shortExplanationString;
     public Sprite[] infoSprites;
 
     // Start is called before the first frame update
@@ -23,7 +25,8 @@ public class InfoUI : MonoBehaviour
         infoCanvas.SetActive(true);
         uiLaser.enabled = true;
         img.sprite = infoSprites[num];
-        txt.text = infoString[num];
+        explanation.text = explanationString[num];
+        shortExplanation.text = shortExplanationString[num];
     }
 
     public void OffInfoUI()
