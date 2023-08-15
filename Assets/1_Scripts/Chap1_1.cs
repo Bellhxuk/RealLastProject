@@ -34,11 +34,5 @@ public class Chap1_1 : MonoBehaviour
     {
         StartCanvas.SetActive(false);
         Destroy(barrier);
-
-        while (alphaNum < 100)
-        {
-            alpha.color = new Color(alpha.color.r, alpha.color.g, alpha.color.b, alphaNum) ;
-            alphaNum++;
-        }
     }
 }

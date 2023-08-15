@@ -17,7 +17,7 @@ public class SceneChanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (objectNum == 26)
+        if (objectNum == 19)
         {
             GoOutCanvas.SetActive(true);
         }
@@ -25,6 +25,6 @@ public class SceneChanger : MonoBehaviour
 
     public void Change() // °è´Ü ¾À ·Îµå
     {
-        SceneManager.LoadScene("Chap1-2Stairs");
+        SceneManager.LoadScene("Chap1-2Stairs_ver2");
     }
 }
