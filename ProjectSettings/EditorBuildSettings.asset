@@ -4,7 +4,19 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/0_Scenes/Chap1House.unity
+    guid: 6e5890cb2ab566c45bb9298c345d0d3a
+  - enabled: 1
+    path: Assets/0_Scenes/Chap1-2Stairs_ver2.unity
+    guid: a7b3427cdf67c4d438c532406f091234
+  - enabled: 1
+    path: Assets/0_Scenes/Chap2City.unity
+    guid: 45ef5074fe2a8584abc96d7a728bf539
+  - enabled: 1
+    path: Assets/0_Scenes/Chap3Subway.unity
+    guid: b08c3c3a91a580543a3d3099d4361c5d
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 65b7dd084296fad42ab820a5cd124d5e, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 86f383f9d88009b48b2bdbc8c31b729c, type: 2}
