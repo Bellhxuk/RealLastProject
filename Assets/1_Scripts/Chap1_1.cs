@@ -6,8 +6,9 @@ using UnityEngine.UI;
 
 /*
  * 프로젝트 시작하면 주변 막혀있음
- * 휴대폰 클릭하면 UI로 위급 재난문자 띄움
+ * 재난문자에 '확인' 누르면 UI 닫힘
  * UI 닫으면 화면 점점 검게 변함, 밑에 플레이어 대사
+ * 잠시 후에 화면 다시 밝아짐, 필터 적용
  */
 public class Chap1_1 : MonoBehaviour
 {

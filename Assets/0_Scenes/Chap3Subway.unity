@@ -2330,6 +2330,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: jarst_station_type5_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6588019391170335329, guid: 332072388bdc3854c87512b7943622b3, type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 332072388bdc3854c87512b7943622b3, type: 3}
 --- !u!4 &374614426479898662 stripped
@@ -2337,6 +2341,24 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4969908841182896870, guid: 332072388bdc3854c87512b7943622b3, type: 3}
   m_PrefabInstance: {fileID: 374614426479898661}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &374614426479898663 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5743067467450153052, guid: 332072388bdc3854c87512b7943622b3, type: 3}
+  m_PrefabInstance: {fileID: 374614426479898661}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &374614426479898664
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374614426479898663}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.6303959, y: 6.1031303, z: 2.8500977}
+  m_Center: {x: -9.867225, y: 4.9964676, z: 4.2893677}
 --- !u!1 &374614426491088836
 GameObject:
   m_ObjectHideFlags: 0

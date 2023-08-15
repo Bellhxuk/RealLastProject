@@ -10,8 +10,10 @@ public class InfoUI : MonoBehaviour
     public Image img;
     public Text explanation;
     public Text shortExplanation;
+    public Text names;
     public string[] explanationString;
     public string[] shortExplanationString;
+    public string[] namesString;
     public Sprite[] infoSprites;
     private SceneChanger changer;
 
@@ -33,6 +35,7 @@ public class InfoUI : MonoBehaviour
         img.sprite = infoSprites[num];
         explanation.text = explanationString[num];
         shortExplanation.text = shortExplanationString[num];
+        names.text = namesString[num];
         changer.objectNum += 1;
     }
 
