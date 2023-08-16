@@ -23,6 +23,7 @@ public class CheckParticleCollide : MonoBehaviour
             if (hp < 1)
             {
                 flame.SetActive(false);
+
             }
         }
     }

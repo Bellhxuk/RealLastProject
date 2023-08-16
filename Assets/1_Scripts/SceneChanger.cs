@@ -36,7 +36,7 @@ public class SceneChanger : MonoBehaviour
             case "Chap1House":
                 SceneManager.LoadScene("Chap1-2Stairs_ver2");
                 break;
-            case "Chap1-2Stairs":
+            case "Chap1-2Stairs_ver2":
                 SceneManager.LoadScene("Chap2City");
                 break;
             case "Chap2City":
