@@ -27,4 +27,5 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene("Chap1-2Stairs_ver2");
     }
+
 }
