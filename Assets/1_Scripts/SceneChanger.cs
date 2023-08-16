@@ -17,6 +17,11 @@ public class SceneChanger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Scene nowScene = SceneManager.GetActiveScene();
+        if (nowScene.name != "Chap1House")
+        {
+            objectNum = 20;
+        }
         if (objectNum == 20)
         {
             GoOutCanvas.SetActive(true);
@@ -25,7 +30,20 @@ public class SceneChanger : MonoBehaviour
 
     public void Change() // °è´Ü ¾À ·Îµå
     {
-        SceneManager.LoadScene("Chap1-2Stairs_ver2");
+        Scene nowScene = SceneManager.GetActiveScene();
+        switch (nowScene.name)
+        {
+            case "Chap1House":
+                SceneManager.LoadScene("Chap1-2Stairs");
+                break;
+            case "Chap1-2Stairs":
+                SceneManager.LoadScene("Chap2City");
+                break;
+            case "Chap2City":
+                SceneManager.LoadScene("Chap3Subway");
+                break;
+        }
+        //SceneManager.LoadScene("Chap1-2Stairs_ver2");
     }
 
 }
