@@ -12,15 +12,16 @@ using UnityEngine.UI;
  */
 public class Chap1_1 : MonoBehaviour
 {
-    public Image alpha;
-    public int alphaNum;
+    public Image effectFilter;
     public GameObject StartCanvas;
     GameObject barrier;
+    GameObject Effect;
 
     // Start is called before the first frame update
     void Start()
     {
-        alpha = GetComponent<Image>();
+        Effect = GameObject.Find("Effect");
+        effectFilter = GetComponent<Image>();
         barrier = GameObject.Find("Chap1-1");
     }
 
@@ -34,5 +35,9 @@ public class Chap1_1 : MonoBehaviour
     {
         StartCanvas.SetActive(false);
         Destroy(barrier);
+        Effect.GetComponent<FadeEffect>().FadeInEffect();
+        effectFilter.color = new Color(effectFilter.color.r, effectFilter.color.g, effectFilter.color.b, 42f);
+        Effect.GetComponent<FadeEffect>().FadeOutEffect();
+
     }
 }
