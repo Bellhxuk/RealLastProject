@@ -6,7 +6,7 @@ public class CheckParticleCollide : MonoBehaviour
 {
     public GameObject flame;
     private ParticleSystem ps;
-    private int hp = 1000, dmg = 5;
+    private int hp = 2000, dmg = 10;
     // Start is called before the first frame update
     void Start()
     {
