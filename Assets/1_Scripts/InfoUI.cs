@@ -15,6 +15,8 @@ public class InfoUI : MonoBehaviour
     public string[] shortExplanationString;
     public string[] namesString;
     public Sprite[] infoSprites;
+    public AudioClip[] ttsSounds;
+    AudioSource AudioSource;
     private SceneChanger changer;
 
     // Start is called before the first frame update
@@ -25,6 +27,7 @@ public class InfoUI : MonoBehaviour
 
     void Start()
     {
+        AudioSource = GetComponent<AudioSource>();
         OffInfoUI();
     }
 
@@ -37,11 +40,15 @@ public class InfoUI : MonoBehaviour
         shortExplanation.text = shortExplanationString[num];
         names.text = namesString[num];
         changer.objectNum += 1;
+        AudioSource.clip = ttsSounds[num];
+        AudioSource.Play();
     }
+
 
     public void OffInfoUI()
     {
         uiLaser.enabled = false;
         infoCanvas.SetActive(false);
+        AudioSource.Stop();
     }
 }

@@ -40,4 +40,6 @@ public class Chap1_1 : MonoBehaviour
         Effect.GetComponent<FadeEffect>().FadeOutEffect();
 
     }
+
+    
 }
