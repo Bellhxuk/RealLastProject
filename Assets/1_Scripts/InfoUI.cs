@@ -15,8 +15,8 @@ public class InfoUI : MonoBehaviour
     public string[] shortExplanationString;
     public string[] namesString;
     public Sprite[] infoSprites;
-    public AudioClip[] ttsSounds;
-    AudioSource AudioSource;
+    public AudioClip[] TTSSounds;
+    AudioSource TtsSource;
     private SceneChanger changer;
 
     // Start is called before the first frame update
@@ -27,21 +27,30 @@ public class InfoUI : MonoBehaviour
 
     void Start()
     {
-        AudioSource = GetComponent<AudioSource>();
+        TtsSource = GameObject.Find("Info UI").GetComponent<AudioSource>();
         OffInfoUI();
     }
 
     public void ShowInfo(int num)
     {
         infoCanvas.SetActive(true);
+        Debug.Log("1Clear");
         uiLaser.enabled = true;
+        Debug.Log("2Clear");
         img.sprite = infoSprites[num];
+        Debug.Log("3Clear");
         explanation.text = explanationString[num];
+        Debug.Log("4Clear");
         shortExplanation.text = shortExplanationString[num];
+        Debug.Log("5Clear");
         names.text = namesString[num];
+        Debug.Log("6Clear");
         changer.objectNum += 1;
-        AudioSource.clip = ttsSounds[num];
-        AudioSource.Play();
+        Debug.Log("7Clear");
+        TtsSource.clip = TTSSounds[num];
+        Debug.Log("8Clear");
+        TtsSource.Play();
+        Debug.Log("FinalClear");
     }
 
 
@@ -49,6 +58,6 @@ public class InfoUI : MonoBehaviour
     {
         uiLaser.enabled = false;
         infoCanvas.SetActive(false);
-        AudioSource.Stop();
+        TtsSource.Stop();
     }
 }
